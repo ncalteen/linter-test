@@ -1,5 +1,4 @@
 JOB_SUMMARY_ADDITIONAL_MARKDOWN: This is my summary additional markdown content from the config file.
-PR_SUMMARY_ADDITIONAL_MARKDOWN: This is my PR summary additional markdown content from the config file.
 
 # Mega-Linter Configuration File
 # https://megalinter.io/latest/config-file/
