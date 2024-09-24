@@ -32,4 +32,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           JOB_SUMMARY_ADDITIONAL_MARKDOWN: This is my summary additional markdown content from the workflow file.
-        uses: oxsecurity/megalinter/flavors/cupcake@beta
+        uses: oxsecurity/megalinter@beta
