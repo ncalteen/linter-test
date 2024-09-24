@@ -1,13 +1,4 @@
-JOB_SUMMARY_ADDITIONAL_MARKDOWN: |
-  This is my summary additional markdown content.
-
-  It's cool!
-
-  ```json
-  {
-    "hello": "world"
-  }
-  ```
+JOB_SUMMARY_ADDITIONAL_MARKDOWN: This is my summary additional markdown content.
 
 # Mega-Linter Configuration File
 # https://megalinter.io/latest/config-file/
