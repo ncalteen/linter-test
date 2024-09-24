@@ -30,6 +30,5 @@ jobs:
       - name: Lint Codebase
         id: lint-codebase
         env:
-          DEFAULT_WORKSPACE: ${{ github.workspace }}
           GITHUB_TOKEN: ${{ github.token }}
         uses: oxsecurity/megalinter/flavors/cupcake@beta
