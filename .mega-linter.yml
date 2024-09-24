@@ -1,4 +1,5 @@
 JOB_SUMMARY_ADDITIONAL_MARKDOWN: |
+
   This is my summary additional markdown content from the config file.
 
   ```json
