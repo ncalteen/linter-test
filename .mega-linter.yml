@@ -1,5 +1,7 @@
 JOB_SUMMARY_ADDITIONAL_MARKDOWN: |
 
+  ### Linter Header
+
   This is my summary additional markdown content from the config file.
 
   ```json
