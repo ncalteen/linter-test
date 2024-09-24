@@ -1,4 +1,14 @@
-JOB_SUMMARY_ADDITIONAL_MARKDOWN: This is my summary additional markdown content from the config file.
+JOB_SUMMARY_ADDITIONAL_MARKDOWN: |
+
+  ### Linter Header
+
+  This is my summary additional markdown content from the config file.
+
+  ```json
+  {
+    "hello": "world"
+  }
+  ```
 
 # Mega-Linter Configuration File
 # https://megalinter.io/latest/config-file/
