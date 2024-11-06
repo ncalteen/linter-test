@@ -9,11 +9,16 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
   packages: read
   statuses: write
   issues: write
   pull-requests: write
+
+env:
+  APPLY_FIXES: all
+  APPLY_FIXES_EVENT: all
+  APPLY_FIXES_MODE: commit
 
 jobs:
   lint:
@@ -31,5 +36,8 @@ jobs:
         id: lint-codebase
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          # JOB_SUMMARY_ADDITIONAL_MARKDOWN: This is my summary additional markdown content from the workflow file.
-        uses: oxsecurity/megalinter@beta
+        uses: oxsecurity/megalinter@v8.1.0
+
+      - run: |
+          echo "${{ steps.lint-codebase.outcome }}"
+          echo "${{ steps.lint-codebase.conclusion }}"
