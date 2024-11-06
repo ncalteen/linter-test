@@ -31,6 +31,7 @@ jobs:
         id: lint-codebase
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          APPLY_FIXES: all
           APPLY_FIXES_EVENT: pull_request
           APPLY_FIXES_MODE: pull_request
         uses: oxsecurity/megalinter@v8
