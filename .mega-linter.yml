@@ -1,5 +1,14 @@
-JOB_SUMMARY_ADDITIONAL_MARKDOWN:
+JOB_SUMMARY_ADDITIONAL_MARKDOWN: |
+
+  ### Linter Header
+
   This is my summary additional markdown content from the config file.
+
+  ```json
+  {
+    "hello": "world"
+  }
+  ```
 
 # Mega-Linter Configuration File
 # https://megalinter.io/latest/config-file/
@@ -18,7 +27,7 @@ DISABLE:
   - SNAKEMAKE
 
 # Flag to have the linter complete with exit code 0 even if errors were detected
-DISABLE_ERRORS: true
+DISABLE_ERRORS: false
 
 # List of disabled linters keys
 # https://megalinter.io/latest/config-activation/
