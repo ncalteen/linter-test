@@ -8,11 +8,9 @@
 
 Use this template to bootstrap the creation of a TypeScript action. :rocket:
 
-This template includes compilation support, tests, a validation workflow,
-publishing, and versioning guidance.
+This template includes compilation support, tests, a validation workflow, publishing, and versioning guidance.
 
-If you are new, there's also a simpler introduction in the
-[Hello world JavaScript action repository](https://github.com/actions/hello-world-javascript-action).
+If you are new, there's also a simpler introduction in the [Hello world JavaScript action repository](https://github.com/actions/hello-world-javascript-action).
 
 ## Create Your Own Action
 
