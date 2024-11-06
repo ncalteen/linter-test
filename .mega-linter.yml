@@ -1,5 +1,3 @@
-UPDATED_SOURCES_REPORTER: false
-
 JOB_SUMMARY_ADDITIONAL_MARKDOWN: |
 
   ### Linter Header
@@ -29,7 +27,7 @@ DISABLE:
   - SNAKEMAKE
 
 # Flag to have the linter complete with exit code 0 even if errors were detected
-DISABLE_ERRORS: true
+DISABLE_ERRORS: false
 
 # List of disabled linters keys
 # https://megalinter.io/latest/config-activation/
