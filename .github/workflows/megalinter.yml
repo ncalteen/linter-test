@@ -65,6 +65,7 @@ jobs:
         id: pull-request
         uses: peter-evans/create-pull-request@v7
         with:
+          base: ${{ github.head_ref || github.ref }}
           branch: ${{ github.head_ref || github.ref }}-megalinter-fixes
           commit-message:
             '[MegaLinter] (${{ github.head_ref || github.ref }}) Automatic Fixes'
