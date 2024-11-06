@@ -4,7 +4,7 @@ JOB_SUMMARY_ADDITIONAL_MARKDOWN: This is my summary additional markdown content 
 # https://megalinter.io/latest/config-file/
 
 # Activates formatting and autofix
-APPLY_FIXES: none
+APPLY_FIXES: all
 
 # Flag to clear files from report folder before starting the linting process
 CLEAR_REPORT_FOLDER: true

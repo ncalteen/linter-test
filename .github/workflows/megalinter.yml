@@ -9,7 +9,7 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
   packages: read
   statuses: write
   issues: write
@@ -31,5 +31,6 @@ jobs:
         id: lint-codebase
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          # JOB_SUMMARY_ADDITIONAL_MARKDOWN: This is my summary additional markdown content from the workflow file.
+          APPLY_FIXES_EVENT: pull_request
+          APPLY_FIXES_MODE: pull_request
         uses: oxsecurity/megalinter@beta
