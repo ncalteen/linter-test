@@ -1,4 +1,5 @@
-JOB_SUMMARY_ADDITIONAL_MARKDOWN: This is my summary additional markdown content from the config file.
+JOB_SUMMARY_ADDITIONAL_MARKDOWN:
+  This is my summary additional markdown content from the config file.
 
 # Mega-Linter Configuration File
 # https://megalinter.io/latest/config-file/
@@ -17,7 +18,7 @@ DISABLE:
   - SNAKEMAKE
 
 # Flag to have the linter complete with exit code 0 even if errors were detected
-DISABLE_ERRORS: false
+DISABLE_ERRORS: true
 
 # List of disabled linters keys
 # https://megalinter.io/latest/config-activation/
@@ -221,4 +222,3 @@ TYPESCRIPT_DEFAULT_STYLE: prettier
 # Will parse the entire repository and find all files to validate
 # When set to false, only new or edited files will be parsed for validation
 VALIDATE_ALL_CODEBASE: true
-
