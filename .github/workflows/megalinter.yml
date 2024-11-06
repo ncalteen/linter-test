@@ -35,7 +35,8 @@ jobs:
       - name: Lint Codebase
         id: lint-codebase
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
+          PAT: ${{ secrets.MY_TOKEN }}
         uses: oxsecurity/megalinter@v8.1.0
 
       - run: |
