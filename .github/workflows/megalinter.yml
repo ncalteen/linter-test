@@ -1,7 +1,5 @@
 name: MegaLinter
 
-
-
 on:
   pull_request:
     branches:
@@ -16,6 +14,11 @@ permissions:
   statuses: write
   issues: write
   pull-requests: write
+
+env:
+  APPLY_FIXES: all
+  APPLY_FIXES_EVENT: all
+  APPLY_FIXES_MODE: commit
 
 jobs:
   lint:
@@ -33,9 +36,6 @@ jobs:
         id: lint-codebase
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          APPLY_FIXES: all
-          APPLY_FIXES_EVENT: all
-          APPLY_FIXES_MODE: pull_request
         uses: oxsecurity/megalinter@v8.1.0
 
       - run: |
